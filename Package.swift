@@ -15,18 +15,14 @@ let package = Package(
         .library(
             name: "OMDB",
             targets: ["OMDB"]
-        ),
+        )
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-docc-plugin.git", from: "1.0.0")
     ],
     targets: [
         .target(
-            name: "OMDB",
-            dependencies: ["OMDB"],
-            resources: [
-                .process("Resources")
-            ]
+            name: "OMDB"
         ),
         .testTarget(
             name: "OMDBTests",
@@ -34,6 +30,6 @@ let package = Package(
             resources: [
                 .process("Resources")
             ]
-        ),
+        )
     ]
 )
