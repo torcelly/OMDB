@@ -21,7 +21,6 @@ extension MoviesEndpoint: Endpoint {
         switch self {
         case .movie(let imdb):
             return Self.basePath
-                .appendingPathComponent("movies")
                 .appendingIMDB(imdb)
             
         }

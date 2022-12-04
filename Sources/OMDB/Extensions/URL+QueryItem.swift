@@ -26,7 +26,7 @@ extension URL {
 extension URL {
 
     private enum QueryItemName {
-        static let apiKey = "api_key"
+        static let apiKey = "apikey"
         static let imdbKey = "i"
         static let titleKey = "t"
         static let typeKey = "type"
