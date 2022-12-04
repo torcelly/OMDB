@@ -141,10 +141,6 @@ public struct Movie: Decodable, Equatable, Hashable {
         self.website = website
         self.response = response
     }
-
-    public init(from decoder: Decoder) throws {
-        fatalError()
-    }
 }
 
 extension Movie {
@@ -178,4 +174,3 @@ extension Movie {
     }
 
 }
-

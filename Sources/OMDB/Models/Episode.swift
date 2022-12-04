@@ -136,7 +136,7 @@ public struct Episode: Decodable, Equatable, Hashable {
 
 }
 
-extension Movie {
+extension Episode {
 
     private enum CodingKeys: String, CodingKey {
         case title = "Title"
